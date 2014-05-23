@@ -76,7 +76,6 @@
 						<a class="blog-nav-item active" href="http://blog.countermarch.com">Blog</a>
 						<a class="blog-nav-item" href="http://www.countermarch.com/##products">Products</a>
 						<a class="blog-nav-item" href="http://www.countermarch.com/about/">About Us</a>
-						<a class="blog-nav-item" href="http://www.countermarch.com/about/##contact">Contact</a>
 					</nav>
 				</div>
 			</div>

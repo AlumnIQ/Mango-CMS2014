@@ -72,15 +72,13 @@
 
 			<div class="blog-masthead">
 				<div class="navbar-inner">
-					<div id="nav">
-						<nav class="blog-nav pull-right">
-							<a class="blog-nav-item" href="http://www.countermarch.com">Home</a>
-							<a class="blog-nav-item active" href="http://blog.countermarch.com">Blog</a>
-							<a class="blog-nav-item" href="http://www.countermarch.com/##products">Products</a>
-							<a class="blog-nav-item" href="http://www.countermarch.com/about/">About Us</a>
-							<a class="blog-nav-item" href="http://www.countermarch.com/about/#contact">Contact</a>
-						</nav>
-					</div>
+					<nav class="blog-nav pull-right">
+						<a class="blog-nav-item" href="http://www.countermarch.com">Home</a>
+						<a class="blog-nav-item active" href="http://blog.countermarch.com">Blog</a>
+						<a class="blog-nav-item" href="http://www.countermarch.com/##products">Products</a>
+						<a class="blog-nav-item" href="http://www.countermarch.com/about/">About Us</a>
+						<a class="blog-nav-item" href="http://www.countermarch.com/about/#contact">Contact</a>
+					</nav>
 					<nav class="burger pull-right" data-visible="false"><span class="glyphicon glyphicon glyphicon-align-justify"></span></nav>
 					<a href="http://www.countermarch.com" class="brand pull-left" title="CounterMarch Systems Blog" alt="CounterMarch Systems Blog"><span>CounterMarch Systems</span></a>
 				</div>

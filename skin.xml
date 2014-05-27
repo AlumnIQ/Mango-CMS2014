@@ -6,7 +6,7 @@
 	<authorUrl>http://fusiongrokker.com</authorUrl>
 	<designAuthor>Adam Tuttle</designAuthor>
 	<designAuthorUrl>http://fusiongrokker.com</designAuthorUrl>
-	<thumbnail>assets/img/preview.png</thumbnail>
+	<thumbnail>preview.png</thumbnail>
 	<preview></preview>
 	<requiresVersion match="greaterOrEqual">1.5</requiresVersion>
 	<adminEditorCss></adminEditorCss>

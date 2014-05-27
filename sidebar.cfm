@@ -27,7 +27,7 @@
 			<p>Get every post in your inbox!</p>
 			<form id="subscribeForm" class="form-search" method="get" action="/generic.cfm">
 				<div class="input-group">
-					<input name="email" class="form-control" id="subscribeemail" type="email" value="" placeholder="Subscribe: you@gmail.com" />
+					<input name="email" class="form-control" id="subscribeemail" type="email" value="" placeholder="you@gmail.com" />
 					<span class="input-group-btn">
 						<button class="btn btn-danger"><span class="glyphicon glyphicon-envelope"></span></button>
 					</span>

@@ -24,6 +24,7 @@
 						<a href="<mango:CategoryProperty link />" title="View all posts in: <mango:CategoryProperty title />" rel="category tag"><mango:CategoryProperty title /></a>
 					</mango:Category>
 				</mango:Categories>
+				<span class="clearfix"></span>
 			</p>
 			<mango:PostProperty body />
 			<mango:Event name="beforePostContentEnd" template="index" mode="excerpt" />

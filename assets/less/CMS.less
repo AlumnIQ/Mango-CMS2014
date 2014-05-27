@@ -4,6 +4,7 @@
 
 @countermarch_red: #d84a38;
 @countermarch_red_dark: darken(@countermarch_red, 10%);
+@active_blue: #4fb6e9;
 
 /*
  * Globals
@@ -16,8 +17,9 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Open Sans", "Helvetica", sans-serif;
   color: #555;
+  background: #efefef url(http://countermarch.com/assets/img/bg.png);
 }
 
 h1, .h1,
@@ -59,33 +61,56 @@ img {
  */
 
 .blog-masthead {
-  background-color: @countermarch_red;
-  box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+  // background-color: @countermarch_red;
+  // box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 
   position: fixed;
   width: 100%;
   z-index: 4;
+
+
+  // height: 40px;
+  background: #EFEFEF;
+  padding: 11px 0 0;
+  border-top: 3px solid #d84a38;
+  border-bottom: 1px solid rgba(0,0,0,.247059);
 }
 
 /* Nav links */
+.blog-nav {
+  // display: block !important;
+}
 .blog-nav-item {
   position: relative;
   display: inline-block;
-  padding: 10px;
-  font-weight: 500;
-  color: white;
+  // padding: 0 10px;
+  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  color: #888;
+  text-shadow: 0 1px 0 #fff;
+  margin-bottom: 11px;
+
+  padding: 7px 28px 6px;
+  line-height: 16px;
+  text-align: center;
+
+}
+.navbar-inner {
+  margin: 0 20px;
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {
-  color: #fff;
+  color: @active_blue;
   text-decoration: none;
-  background-color: @countermarch_red_dark;
 }
 
 /* Active state gets a caret at the bottom */
 .blog-nav .active {
-  color: #fff;
+  color: @active_blue;
 }
+/*
 .blog-nav .active:after {
   position: absolute;
   bottom: 0;
@@ -99,6 +124,22 @@ img {
   border-bottom: 5px solid;
   border-left:   5px solid transparent;
 }
+*/
+
+//CMS logo
+.brand {
+  background: url(http://www.countermarch.com/assets/img/logo-small.png);
+  width: 245px;
+  height: 34px;
+  margin-top: -2px;
+
+  span {
+    margin-left: -500px;
+  }
+}
+.burger {
+  display: none;
+}
 
 
 /*
@@ -106,8 +147,8 @@ img {
  */
 
 .blog-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 110px;
+  padding-bottom: 40px;
 }
 .blog-title {
   margin-top: 30px;
@@ -116,7 +157,7 @@ img {
   font-weight: normal;
 }
 .blog-description {
-  font-size: 20px;
+  font-size: 26px;
   color: #999;
 }
 
@@ -222,4 +263,44 @@ img {
   text-align: center;
   background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
+}
+
+
+@media (max-width: 860px) {
+  .blog-masthead {
+    .blog-nav-item {
+      padding: 7px 8px 6px;
+    }
+  }
+}
+
+@media (max-width: 665px) {
+  .burger {
+    display: block;
+    border-left: 1px solid rgba(0,0,0,.247059);
+    height: 51px;
+    font-size: 23px;
+    margin-top: -11px;
+    padding: 10px 18px 0;
+    margin-right: -20px;
+    cursor: pointer;
+  }
+  .blog-nav {
+    display: none;
+    // display: block;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    right: 0;
+    background: #efefef;
+    // border-bottom: 1px solid rgba(0,0,0,.247059);
+
+    .blog-nav-item {
+      display: block;
+      width: 100%;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(0,0,0,.247059);
+      margin-bottom: 0;
+    }
+  }
 }

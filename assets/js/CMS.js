@@ -7,6 +7,27 @@ $("#respond input[name=comment_email]").blur(function(){
 	$("#gravatar_preview").empty().append("<em>Gravatar preview:</em><br/><img src='"+t+"' />");
 });
 
+$(".burger").on('click', function(){
+	var $this = $(this);
+	if ($this.data('visible') === false){
+		$(".blog-nav").slideDown();
+		$this.data('visible', true);
+	}else{
+		$(".blog-nav").slideUp();
+		$this.data('visible', false);
+	}
+});
+$(window).on('resize', function(){
+	var $burger = $(".burger");
+	if ($(window).width() > 665){
+		$(".blog-nav").css("display","inline-block");
+		$burger.data("visible", true);
+	}else{
+		$(".blog-nav").css("display", "none");
+		$burger.data("visible", false);
+	}
+});
+
 //start shadowbox
 Shadowbox.init();
 

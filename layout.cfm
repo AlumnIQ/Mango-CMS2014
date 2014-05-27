@@ -49,7 +49,8 @@
 				<![endif]-->
 
 				<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-				<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+				<!--- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"> --->
+				<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700,600" />
 				<link href="#variables.cssUrl#/bundle.min.css" rel="stylesheet" />
 
 				<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="#variables.rssurl#" />
@@ -70,20 +71,24 @@
 			<mango:Event name="beforeHtmlBodyStart" />
 
 			<div class="blog-masthead">
-				<div class="container">
-					<nav class="blog-nav">
-						<a class="blog-nav-item" href="http://www.countermarch.com">Home</a>
-						<a class="blog-nav-item active" href="http://blog.countermarch.com">Blog</a>
-						<a class="blog-nav-item" href="http://www.countermarch.com/##products">Products</a>
-						<a class="blog-nav-item" href="http://www.countermarch.com/about/">About Us</a>
-					</nav>
+				<div class="navbar-inner">
+					<div id="nav">
+						<nav class="blog-nav pull-right">
+							<a class="blog-nav-item" href="http://www.countermarch.com">Home</a>
+							<a class="blog-nav-item active" href="http://blog.countermarch.com">Blog</a>
+							<a class="blog-nav-item" href="http://www.countermarch.com/##products">Products</a>
+							<a class="blog-nav-item" href="http://www.countermarch.com/about/">About Us</a>
+							<a class="blog-nav-item" href="http://www.countermarch.com/about/#contact">Contact</a>
+						</nav>
+					</div>
+					<nav class="burger pull-right" data-visible="false"><span class="glyphicon glyphicon glyphicon-align-justify"></span></nav>
+					<a href="http://www.countermarch.com" class="brand pull-left" title="CounterMarch Systems Blog" alt="CounterMarch Systems Blog"><span>CounterMarch Systems</span></a>
 				</div>
 			</div>
 
 			<div class="container">
 
 				<div class="blog-header">
-					<h1 class="blog-title">CounterMarch Blog</h1>
 					<p class="lead blog-description">Thoughts on creating <strong>a smarter class of software</strong> for alumni relations</p>
 				</div>
 
